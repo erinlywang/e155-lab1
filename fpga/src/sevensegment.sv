@@ -7,7 +7,7 @@
 
 module sevensegment(input	logic [3:0] in,
 					output	logic [6:0] seg);
-			// combination output logic for seg
+	// combination output logic for seg
 	always_comb
 		case (in)
 			4'b0000:		seg = 7'b1000000;
