@@ -30,10 +30,10 @@ module top( input	logic reset,
 	always_ff @(posedge int_osc) begin
 		if (reset==0)		counter <= 24'b0;
 		else if (counter == 24'd5000000)	begin
-			counter <= 0;
+			counter <= 24'b0;
 			counter_output <= ~counter_output;
 		end
-		else				counter <= counter + 1;
+		else				counter <= counter + 24'b1;
 	end
 
 	// combination output logic for led
