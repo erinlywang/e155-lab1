@@ -1,0 +1,43 @@
+C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_sevseg.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_sevseg.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_sevseg
+
+Top level modules:
+	tb_sevseg
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_clkdiv.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_clkdiv.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_clkdiv
+
+Top level modules:
+	tb_clkdiv
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/top.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_top.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_top
+
+Top level modules:
+	tb_top
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/sevensegment.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/sevensegment.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module sevensegment
+
+Top level modules:
+	sevensegment
+
+} {} {}} C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/clk_div.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/clk_div.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module clk_div
+
+Top level modules:
+	clk_div
+
+} {} {}}

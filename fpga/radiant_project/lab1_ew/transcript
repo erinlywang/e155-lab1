@@ -1,0 +1,291 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vlog -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/sevensegment.sv
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:54:03 on Sep 01,2025
+# vlog -reportprogress 300 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/sevensegment.sv 
+# -- Compiling module sevensegment
+# 
+# Top level modules:
+# 	sevensegment
+# End time: 20:54:03 on Sep 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.tb_top -L iCE40UP -Lf iCE40UP -voptargs=+acc
+# vsim -gui work.tb_top -L iCE40UP -Lf iCE40UP -voptargs="+acc" 
+# Start time: 20:54:27 on Sep 01,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.clk_div(fast)
+# Loading work.sevensegment(fast)
+add wave -position insertpoint sim:/tb_top/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: erinwang  Hostname: 6CJZ0R3  ProcessID: 16840
+#           Attempting to use alternate WLF file "./wlftd8twza".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftd8twza
+add wave -position insertpoint  \
+sim:/tb_top/segexpected
+run -all
+#         16 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_top.sv(60)
+#    Time: 175 ns  Iteration: 1  Instance: /tb_top
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_top.sv line 60
+# Causality operation skipped due to absence of debug database file
+quit -sim
+# End time: 20:56:58 on Sep 01,2025, Elapsed time: 0:02:31
+# Errors: 0, Warnings: 3
+vsim -gui -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_sevseg
+# vsim -gui -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_sevseg 
+# Start time: 20:57:15 on Sep 01,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_sevseg(fast)
+# Loading work.sevensegment(fast)
+add wave -position insertpoint sim:/tb_sevseg/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: erinwang  Hostname: 6CJZ0R3  ProcessID: 16840
+#           Attempting to use alternate WLF file "./wlftkb9th8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkb9th8
+run -all
+#         16 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_sevseg.sv(56)
+#    Time: 175 ns  Iteration: 1  Instance: /tb_sevseg
+# Break in Module tb_sevseg at C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_sevseg.sv line 56
+quit -sim
+# End time: 20:59:06 on Sep 01,2025, Elapsed time: 0:01:51
+# Errors: 0, Warnings: 3
+vlog -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/sevensegment.sv
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 23:08:35 on Sep 01,2025
+# vlog -reportprogress 300 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/sevensegment.sv 
+# -- Compiling module sevensegment
+# 
+# Top level modules:
+# 	sevensegment
+# End time: 23:08:35 on Sep 01,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_top
+# vsim -gui -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_top 
+# Start time: 23:09:22 on Sep 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.clk_div(fast)
+# Loading work.sevensegment(fast)
+add wave -position insertpoint sim:/tb_top/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: erinwang  Hostname: 6CJZ0R3  ProcessID: 16840
+#           Attempting to use alternate WLF file "./wlfta4wwin".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfta4wwin
+run -all
+#         16 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_top.sv(60)
+#    Time: 175 ns  Iteration: 1  Instance: /tb_top
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_top.sv line 60
+quit -sim
+# End time: 23:11:59 on Sep 01,2025, Elapsed time: 0:02:37
+# Errors: 0, Warnings: 3
+vsim -gui -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_sevseg
+# vsim -gui -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_sevseg 
+# Start time: 23:12:28 on Sep 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_sevseg(fast)
+# Loading work.sevensegment(fast)
+add wave -position insertpoint  \
+sim:/tb_sevseg/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: erinwang  Hostname: 6CJZ0R3  ProcessID: 16840
+#           Attempting to use alternate WLF file "./wlftbjw1wr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbjw1wr
+add wave -position insertpoint  \
+sim:/tb_sevseg/reset
+add wave -position insertpoint  \
+sim:/tb_sevseg/s
+add wave -position insertpoint  \
+sim:/tb_sevseg/seg
+add wave -position insertpoint  \
+sim:/tb_sevseg/segexpected
+run -all
+#         16 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_sevseg.sv(56)
+#    Time: 175 ns  Iteration: 1  Instance: /tb_sevseg
+# Break in Module tb_sevseg at C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_sevseg.sv line 56
+quit -sim
+# End time: 23:17:41 on Sep 01,2025, Elapsed time: 0:05:13
+# Errors: 0, Warnings: 3
+vlog -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/clk_div.sv
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:21:46 on Sep 02,2025
+# vlog -reportprogress 300 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/clk_div.sv 
+# -- Compiling module clk_div
+# 
+# Top level modules:
+# 	clk_div
+# End time: 00:21:46 on Sep 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/sevensegment.sv
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:21:49 on Sep 02,2025
+# vlog -reportprogress 300 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/sevensegment.sv 
+# -- Compiling module sevensegment
+# 
+# Top level modules:
+# 	sevensegment
+# End time: 00:21:49 on Sep 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_clkdiv.sv
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:21:54 on Sep 02,2025
+# vlog -reportprogress 300 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_clkdiv.sv 
+# -- Compiling module tb_clkdiv
+# 
+# Top level modules:
+# 	tb_clkdiv
+# End time: 00:21:54 on Sep 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_sevseg.sv
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:22:00 on Sep 02,2025
+# vlog -reportprogress 300 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_sevseg.sv 
+# -- Compiling module tb_sevseg
+# 
+# Top level modules:
+# 	tb_sevseg
+# End time: 00:22:00 on Sep 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_top.sv
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:22:05 on Sep 02,2025
+# vlog -reportprogress 300 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_top.sv 
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 00:22:05 on Sep 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.top
+# vsim work.top 
+# Start time: 00:22:07 on Sep 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/clk_div.sv(11): Module 'HSOSC' is not defined.
+#  For instance 'hf_osc' at path 'top.clk_div'
+# ** Error: C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/top.sv(18): Module 'HSOSC' is not defined.
+#  For instance 'hf_osc' at path 'top'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
+# Error loading design
+vlog -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/top.sv
+# End time: 00:22:11 on Sep 02,2025, Elapsed time: 0:00:04
+# Errors: 2, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:22:11 on Sep 02,2025
+# vlog -reportprogress 300 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/top.sv 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 00:22:11 on Sep 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_top
+# vsim work.tb_top 
+# Start time: 00:22:27 on Sep 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/top.sv(27): Module 'HSOSC' is not defined.
+#  For instance 'hf_osc' at path 'tb_top.dut'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 00:22:27 on Sep 02,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.tb_top -L iCE40UP -Lf iCE40UP -voptargs=+acc
+# vsim work.tb_top -L iCE40UP -Lf iCE40UP -voptargs="+acc" 
+# Start time: 00:23:14 on Sep 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.sevensegment(fast)
+add wave -position insertpoint sim:/tb_top/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: erinwang  Hostname: 6CJZ0R3  ProcessID: 16840
+#           Attempting to use alternate WLF file "./wlft9ehyvr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft9ehyvr
+run -all
+#         16 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_top.sv(60)
+#    Time: 175 ns  Iteration: 1  Instance: /tb_top
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_top.sv line 60
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.sevensegment(fast)
+run -all
+#         16 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_top.sv(60)
+#    Time: 175 ns  Iteration: 1  Instance: /tb_top
+# Break in Module tb_top at C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_top.sv line 60
+quit -sim
+# End time: 00:27:42 on Sep 02,2025, Elapsed time: 0:04:28
+# Errors: 0, Warnings: 1
+vsim -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_sevseg
+# vsim -L iCE40UP -Lf iCE40UP -voptargs="+acc" work.tb_sevseg 
+# Start time: 00:27:59 on Sep 02,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_sevseg(fast)
+# Loading work.sevensegment(fast)
+add wave -position insertpoint sim:/tb_sevseg/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: erinwang  Hostname: 6CJZ0R3  ProcessID: 16840
+#           Attempting to use alternate WLF file "./wlfte18xz0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfte18xz0
+run -all
+#         16 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_sevseg.sv(56)
+#    Time: 175 ns  Iteration: 1  Instance: /tb_sevseg
+# Break in Module tb_sevseg at C:/Users/erinwang/Desktop/E155_lab1/E155_lab1/lab1_ew/source/impl_1/tb_sevseg.sv line 56
+quit -sim
+# End time: 00:30:05 on Sep 02,2025, Elapsed time: 0:02:06
+# Errors: 0, Warnings: 3
+vsim -L iCE40UP -Lf iCE40UP -voptargs=+acc work.tb_clkdiv
